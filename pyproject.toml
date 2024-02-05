@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "local_chatbot"
+version = "0.1.0"
+description = "a ChatGPT style interface for a local LLM."
+authors = ["brajajain <b.rajan.jain@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+taipy = "^3.0.0"
+langchain = "^0.1.5"
+ollama = "^0.1.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
