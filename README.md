@@ -7,7 +7,7 @@ Before you begin, ensure you have met the following requirements:
 
 - Python 3.11 or newer.
 - Poetry for Python package and dependency management. If you do not have Poetry installed, follow the [installation instructions on Poetry's website](https://python-poetry.org/docs/#installation).
-- Ollama | [click to download](https://python-poetry.org/download)
+- Ollama | [click to download](https://ollama.ai/download)
     - install and run `ollama run mixtral`
 
 # Installation
