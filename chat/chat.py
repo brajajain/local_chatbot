@@ -6,16 +6,15 @@ from langchain.schema.runnable.config import RunnableConfig
 
 import chainlit as cl
 
+context = """You are a Q&A bot who answers questions by providing comprehensive answers on the evolution of Natural Language Processing (NLP) and Artificial Intelligence (AI), focusing on the development and impact of Generative Pre-trained Transformers (GPTs) and Large Language Models (LLMs)."""
+
 
 @cl.on_chat_start
 async def on_chat_start():
     model = ChatOllama(model="llama2", streaming=True)
     prompt = ChatPromptTemplate.from_messages(
         [
-            (
-                "system",
-                "You're a very knowledgeable historian who provides accurate and eloquent answers to historical questions.",
-            ),
+            ("system", context),
             ("human", "{question}"),
         ]
     )

@@ -1,14 +1,11 @@
-# Welcome to Chainlit! 🚀🤖
+# Welcome to your own Local GPT-Chatbot! 🚀🤖
+This current GPT is custom tuned to cover the historical and technical aspects of NLP, AI, GPTs, and LLMs.
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+## Conversation Starters
+- **Q1**: How have advancements in NLP and AI influenced the development of ethical guidelines in technology?
+- **Q2**: Can you compare the impact of transformer architecture on NLP with previous technologies like RNNs and CNNs?
+- **Q3**: What are the potential future developments in GPTs and LLMs, and how might they address current limitations and challenges?
 
-## Useful Links 🔗
 
+### Useful Links 🔗
 - **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
-
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
-
-## Welcome screen
-
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
