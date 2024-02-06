@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.8.3, <4.0"
 chainlit = "^1.0.200"
 litellm = "^1.22.3"
 langchain = "^0.1.5"
