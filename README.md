@@ -13,7 +13,7 @@ Before you begin, ensure you have met the following requirements:
 # Installation
 1. **Clone the repository**:
 ```bash
-   git clone https://github.com/yourusername/local_chatbot.git
+   git clone https://github.com/brajajain/local_chatbot.git
 ```
 
  
