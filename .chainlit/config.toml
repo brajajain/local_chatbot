@@ -10,7 +10,7 @@ user_env = []
 session_timeout = 3600
 
 # Enable third parties caching (e.g LangChain cache)
-cache = false
+cache = true
 
 # Authorized origins 
 allow_origins = ["*"]
@@ -35,17 +35,17 @@ multi_modal = true
 [features.speech_to_text]
     enabled = false
     # See all languages here https://github.com/JamesBrill/react-speech-recognition/blob/HEAD/docs/API.md#language-string
-    # language = "en-US"
+    language = "en-US"
 
 [UI]
 # Name of the app and chatbot.
-name = "Chatbot"
+name = "Local Chatbot"
 
 # Show the readme while the thread is empty.
 show_readme_as_default = true
 
 # Description of the app and chatbot. This is used for HTML tags.
-# description = ""
+description = "A local chatbot to demonstrate democratized AI."
 
 # Large size content are by default collapsed for a cleaner ui
 default_collapse_content = true
@@ -57,37 +57,36 @@ default_expand_messages = false
 hide_cot = false
 
 # Link to your github repo. This will add a github button in the UI's header.
-# github = ""
+github = "https://github.com/brajajain/local_chatbot"
 
 # Specify a CSS file that can be used to customize the user interface.
 # The CSS file can be served from the public directory or via an external link.
 # custom_css = "/public/test.css"
 
 # Specify a custom font url.
-# custom_font = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+custom_font = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
 
 # Override default MUI light theme. (Check theme.ts)
 [UI.theme]
-    #font_family = "Inter, sans-serif"
+    # font_family = "Inter, sans-serif"
 [UI.theme.light]
-    #background = "#FAFAFA"
-    #paper = "#FFFFFF"
+    background = "#F5F5F5"  # Cream White for a soft, warm background
+    paper = "#FFFFFF"  # Pure White for clean, crisp paper elements
 
     [UI.theme.light.primary]
-        #main = "#F80061"
-        #dark = "#980039"
-        #light = "#FFE7EB"
+        main = "#5F7A8B"  # Soft Grayish-Blue as the primary color
+        dark = "#36454F"  # Charcoal Gray for darker elements
+        light = "#D3D3D3"  # Light Gray for lighter elements
 
 # Override default MUI dark theme. (Check theme.ts)
 [UI.theme.dark]
-    #background = "#FAFAFA"
-    #paper = "#FFFFFF"
+    background = "#2C3E50"  # A darker shade for the dark theme background, assuming a darker variant of the primary color for thematic consistency
+    paper = "#36454F"  # Charcoal Gray for dark theme paper elements
 
     [UI.theme.dark.primary]
-        #main = "#F80061"
-        #dark = "#980039"
-        #light = "#FFE7EB"
-
+        main = "#5F7A8B"  # Soft Grayish-Blue as the primary color
+        dark = "#2C3E50"  # A darker shade, adjusted for the dark theme's primary dark color
+        light = "#6E8CA0"  # A lighter shade of grayish-blue, adjusted for the dark theme's primary light color
 
 [meta]
 generated_by = "1.0.200"
