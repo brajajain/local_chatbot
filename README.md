@@ -5,10 +5,10 @@ A ChatGPT style app for a local LLM
 
 Before you begin, ensure you have met the following requirements:
 
-- Python 3.11 or newer.
+- Python >=3.8.3, <4.0.
 - Poetry for Python package and dependency management. If you do not have Poetry installed, follow the [installation instructions on Poetry's website](https://python-poetry.org/docs/#installation).
 - Ollama | [click to download](https://ollama.ai/download)
-    - install and run `ollama run mixtral`
+    - install and run `ollama run llama2`
 
 # Installation
 1. **Clone the repository**:
@@ -46,3 +46,15 @@ poetry install
 ```sh
 chainlit run chat/chat.py
 ```
+
+**Specifying a Different Model** 
+If you wish to use a different model, such as `mistral` or `mixtral`, you can specify this by setting an environment variable before running the chatbot. For example, to use the `mistral` model, set the `CHAT_MODEL` environment variable as follows:
+
+On Linux or macOS:
+
+```sh
+export CHAT_MODEL=mistral
+chainlit run chat/chat.py
+```
+
+Replace `mistral` with your desired model name. This allows you to easily switch between different models without modifying the chatbot's code.
