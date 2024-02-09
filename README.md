@@ -8,7 +8,7 @@ Before you begin, ensure you have met the following requirements:
 - Python >=3.8.3, <4.0.
 - Poetry for Python package and dependency management. If you do not have Poetry installed, follow the [installation instructions on Poetry's website](https://python-poetry.org/docs/#installation).
 - Ollama | [click to download](https://ollama.ai/download)
-    - install and run `ollama run llama2`
+    - install and run `ollama pull llama2`
 
 # Installation
 1. **Clone the repository**:
@@ -53,6 +53,7 @@ If you wish to use a different model, such as `mistral` or `mixtral`, you can sp
 On Linux or macOS:
 
 ```sh
+ollama pull mistral
 export CHAT_MODEL=mistral
 chainlit run chat/chat.py
 ```
